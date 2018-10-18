@@ -54,11 +54,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.mikelartetxe.com/publication/2017a-acl/">
+  <link rel="canonical" href="http://www.mikelartetxe.com/publication/2018e-emnlp/">
 
   
 
-  <title>Learning bilingual word embeddings with (almost) no bilingual data | Mikel Artetxe</title>
+  <title>Unsupervised Statistical Machine Translation | Mikel Artetxe</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -146,7 +146,7 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name">Learning bilingual word embeddings with (almost) no bilingual data</h1>
+    <h1 itemprop="name">Unsupervised Statistical Machine Translation</h1>
     <span class="pub-authors" itemprop="author">
       
       Mikel Artetxe, Gorka Labaka, Eneko Agirre
@@ -158,35 +158,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2017a-acl%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2018e-emnlp%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Learning%20bilingual%20word%20embeddings%20with%20%28almost%29%20no%20bilingual%20data&amp;url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2017a-acl%2f"
+         href="https://twitter.com/intent/tweet?text=Unsupervised%20Statistical%20Machine%20Translation&amp;url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2018e-emnlp%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2017a-acl%2f&amp;title=Learning%20bilingual%20word%20embeddings%20with%20%28almost%29%20no%20bilingual%20data"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2018e-emnlp%2f&amp;title=Unsupervised%20Statistical%20Machine%20Translation"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2017a-acl%2f&amp;title=Learning%20bilingual%20word%20embeddings%20with%20%28almost%29%20no%20bilingual%20data"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2018e-emnlp%2f&amp;title=Unsupervised%20Statistical%20Machine%20Translation"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Learning%20bilingual%20word%20embeddings%20with%20%28almost%29%20no%20bilingual%20data&amp;body=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2017a-acl%2f">
+         href="mailto:?subject=Unsupervised%20Statistical%20Machine%20Translation&amp;body=http%3a%2f%2fwww.mikelartetxe.com%2fpublication%2f2018e-emnlp%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -203,7 +203,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">Most methods to learn bilingual word embeddings rely on large parallel corpora, which is difficult to obtain for most language pairs. This has motivated an active research line to relax this requirement, with methods that use document-aligned corpora or bilingual dictionaries of a few thousand words instead. In this work, we further reduce the need of bilingual resources using a very simple self-learning approach that can be combined with any dictionary-based mapping technique. Our method exploits the structural similarity of embedding spaces, and works with as little bilingual evidence as a 25 word dictionary or even an automatically generated list of numerals, obtaining results comparable to those of systems that use richer resources.</p>
+  <p class="pub-abstract" itemprop="text">While modern machine translation has relied on large parallel corpora, a recent line of work has managed to train Neural Machine Translation (NMT) systems from monolingual corpora only (Artetxe et al., 2018c; Lample et al., 2018). Despite the potential of this approach for low-resource settings, existing systems are far behind their supervised counterparts, limiting their practical interest. In this paper, we propose an alternative approach based on phrase-based Statistical Machine Translation (SMT) that significantly closes the gap with supervised systems. Our method profits from the modular architecture of SMT: we first induce a phrase table from monolingual corpora through cross-lingual embedding mappings, combine it with an n-gram language model, and fine-tune hyperparameters through an unsupervised MERT variant. In addition, iterative backtranslation improves results further, yielding, for instance, 14.08 and 26.22 BLEU points in WMT 2014 English-German and English-French, respectively, an improvement of more than 7-10 BLEU points over previous unsupervised systems, and closing the gap with supervised SMT (Moses trained on Europarl) down to 2-5 BLEU points. Our implementation is available at <a href="https://github.com/artetxem/monoses" target="_blank">https://github.com/artetxem/monoses</a>.</p>
 
   
 
@@ -212,7 +212,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">In <em>Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</em></div>
+        <div class="col-xs-12 col-sm-9">In <em>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</em></div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -225,7 +225,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          July, 2017
+          November, 2018
         </div>
       </div>
     </div>
@@ -245,27 +245,19 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="http://www.mikelartetxe.com/publication/2017a-acl.bib">
+<a class="btn btn-primary btn-outline" href="http://www.mikelartetxe.com/publication/2018e-emnlp.bib">
   BibTeX
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://aclweb.org/anthology/P/P17/P17-1042.pdf">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/pdf/1809.01272.pdf">
   PDF
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://aclweb.org/anthology/attachments/P/P17/P17-1042.Presentation.pdf">
-  Slides
-</a>
 
 
-<a class="btn btn-primary btn-outline" href="https://vimeo.com/234954663">
-  Video
-</a>
-
-
-<a class="btn btn-primary btn-outline" href="https://github.com/artetxem/vecmap">
+<a class="btn btn-primary btn-outline" href="https://github.com/artetxem/monoses">
   Code
 </a>
 
@@ -291,13 +283,10 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.mikelartetxe.com/publication/2016b-emnlp/"><span
-      aria-hidden="true">&larr;</span> Learning principled bilingual mappings of word embeddings while preserving monolingual invariance</a></li>
+    <li class="previous"><a href="http://www.mikelartetxe.com/publication/2018d-conll/"><span
+      aria-hidden="true">&larr;</span> Uncovering divergent linguistic information in word embeddings with lessons for intrinsic and extrinsic evaluation</a></li>
     
 
-    
-    <li class="next"><a href="http://www.mikelartetxe.com/publication/2018a-aaai/">Generalizing and improving bilingual word embedding mappings with a multi-step framework of linear transformations <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
